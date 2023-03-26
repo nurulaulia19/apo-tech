@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Navbar dengan Bootstrap</title>
+  <!-- Import file CSS Bootstrap -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cYrNjLb6U5Sw6U11aMR7FWRL0jlvTV15zJd1gpXG1ZVGLjv0Jez7VszSXfA8DW7oOgjeBVqGxqQJ9XrBOfjU1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-color">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="margin-right: 150px;margin-left: 50px;">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mr-5">
+            <a class="nav-link active" aria-current="page" href="#" style="margin-right: 100px;"><i class="fas fa-home me-2"></i>Beranda</a>
+        </li>
+        <li class="nav-item mt-0" style="margin-top: 10px;">
+            <form class="d-flex">
+            <input class="form-control me-3 w-100" style="width: 300px;" type="search" placeholder="Cari" aria-label="Cari" >
+            <button class="btn btn-outline-info btn-outline-dark" type="submit" ><i class="fas fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </li>
+        </ul>
+        <ul class="navbar-nav ms-auto " style="margin-right: 50px;">
+            <li class="nav-item ms-lg-5" style="margin-right: 50px;">
+                <a class="nav-link" href="#"><button class="btn btn-outline-info btn-outline-dark"><i class="fas fa-basket-shopping"></i></button></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+                <button class="btn btn-outline-info btn-outline-dark">
+                <i class="fas fa-user me-2"></i>Login
+                </button>
+            </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div id="hero-slider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+            <p>Description 1</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+            <p>Description 2</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+            <p>Description 3</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<section class="category-section">
+    <div class="category-item">
+    <div class="category-icon-1">
+        <a href="#">
+            <img src="Katagori.png" alt="Kategori">
+        </a>
+    </div>
+    </div>
+    <div class="category-item">
+    <div class="category-icon-2">
+        <a href="">
+            <img src="Bottle.png" alt="Botol">
+        </a>
+    </div>
+    </div>  
+    <div class="category-item">
+    <div class="category-icon-3">
+        <a href="">
+            <img src="Hati.png" alt="Hati">
+        </a>
+    </div>
+    </div> 
+    <div class="category-item">
+    <div class="category-icon-4">
+        <a href="">
+            <img src="Bayi.png" alt="Bayi">
+        </a>
+    </div>
+    </div> 
+    <div class="category-item">
+    <div class="category-icon-5">
+        <a href="">
+            <img src="keluarga.png" alt="Keluarga">
+        </a>
+    </div>
+    </div> 
+    <div class="category-item">
+    <div class="category-icon-6">
+        <a href="">
+            <img src="keras.png" alt="Keras">
+        </a>
+    </div>
+    </div> 
+    <div class="category-item">
+    <div class="category-icon-7">
+        <a href="">
+            <img src="milk.png" alt="Susu">
+        </a>
+    </div>
+    </div> 
+</section>
+
+
+<div class="category-item-container">      
+    <div class="mb-5" style="display: flex; align-items: center; justify-content: center;">
+        <hr style="width: 25%; margin-right: 10px;">
+        <h3 style="margin: 0;">Produk Terlaris</h3>
+        <hr style="width: 25%; margin-left: 10px;">
+    </div>      
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="item-mobile">
+                <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                    <div class="item-image-wrapper-m">
+                        <figure class="item-image-container">
+                            <picture>
+                                <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="item-meta-container-m">
+                        <div class="item-type-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Box isi 30 kapsul</span>
+                        </div>
+                        <div class="item-name-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Biovision 30’s</span>
+                        </div>
+                        <div class="item-price-m" style="background-color: #00B9D8;">
+                            <br>
+                            <span class="price">Rp. 555.000</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="item-mobile">
+                <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                    <div class="item-image-wrapper-m">
+                        <figure class="item-image-container">
+                            <picture>
+                                <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="item-meta-container-m">
+                        <div class="item-type-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Box isi 30 kapsul</span>
+                        </div>
+                        <div class="item-name-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Biovision 30’s</span>
+                        </div>
+                        <div class="item-price-m" style="background-color: #00B9D8;">
+                            <br>
+                            <span class="price">Rp. 555.000</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>     
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="item-mobile">
+                <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                    <div class="item-image-wrapper-m">
+                        <figure class="item-image-container">
+                            <picture>
+                                <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="item-meta-container-m">
+                        <div class="item-type-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Box isi 30 kapsul</span>
+                        </div>
+                        <div class="item-name-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Biovision 30’s</span>
+                        </div>
+                        <div class="item-price-m" style="background-color: #00B9D8;">
+                            <br>
+                            <span class="price">Rp. 555.000</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>     
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="item-mobile">
+                <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                    <div class="item-image-wrapper-m">
+                        <figure class="item-image-container">
+                            <picture>
+                                <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="item-meta-container-m">
+                        <div class="item-type-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Box isi 30 kapsul</span>
+                        </div>
+                        <div class="item-name-m" style="background-color: #D9D9D9;">
+                            <span style="display: inline-block;">Biovision 30’s</span>
+                        </div>
+                        <div class="item-price-m" style="background-color: #00B9D8;">
+                            <br>
+                            <span class="price">Rp. 555.000</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>                
+    </div>
+</div>
+<div class="container text-center">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Promo 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Promo 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Promo 3">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Promo 4">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+</div>
+<div class="container-item">
+    <div class="category-item-container mt-5">      
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>     
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>     
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>  
+        </div>              
+    </div>
+    <div class="category-item-container mt-5">      
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>     
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>     
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="item-mobile">
+                    <a href="https://example.com/product-page" style="text-decoration:none; color:inherit;">
+                        <div class="item-image-wrapper-m">
+                            <figure class="item-image-container">
+                                <picture>
+                                    <img src="milk123.png" alt="" style="object-fit: cover;width: 200px;height: 200px;">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="item-meta-container-m">
+                            <div class="item-type-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Box isi 30 kapsul</span>
+                            </div>
+                            <div class="item-name-m" style="background-color: #D9D9D9;">
+                                <span style="display: inline-block;">Biovision 30’s</span>
+                            </div>
+                            <div class="item-price-m" style="background-color: #00B9D8;">
+                                <br>
+                                <span class="price">Rp. 555.000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>  
+        </div>        
+    </div>
+</div>
+<div class="next-product-container" style="padding: 10px; background-color: #D9D9D9;margin: 5px 10px 0px 10px;border-radius: 0px 0px 10px 10px;">
+    <button class="next-product-button">Lihat Produk Selanjutnya</button>
+</div>
+<div class="row" style="margin-top: 100px;">
+    <div class="col-md-4">
+        <div class="card mx-auto" style="max-width: 325px;border-radius: 15px;background-color: #00B9D8;">
+            <img class="card-img-top" src="icon_footer_main.png" alt="Card image cap">
+            <div class="card-body text-center">
+                <p class="card-text" style="font-size: 18px;font-weight: bold; color: white;">Aplikasi Beli Obat Online yang Bisa Membantumu Tebus Resep Tanpa Antre</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mx-auto" style="max-width: 325px;border-radius: 15px;background-color: #00B9D8;">
+            <img class="card-img-top" src="icon_footer_main.png" alt="Card image cap">
+            <div class="card-body text-center">
+                <p class="card-text" style="font-size: 18px;font-weight: bold; color: white;">Aplikasi Beli Obat Online yang Bisa Membantumu Tebus Resep Tanpa Antrei</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mx-auto" style="max-width: 325px;border-radius: 15px;background-color: #00B9D8;">
+            <img class="card-img-top" src="icon_footer_main.png" alt="Card image cap">
+            <div class="card-body text-center">
+                <p class="card-text" style="font-size: 18px;font-weight: bold; color: white;">Aplikasi Beli Obat Online yang Bisa Membantumu Tebus Resep Tanpa Antre</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer py-3">
+    <div class="container-fluid" style="background-color: #D9D9D9;margin-bottom: 100px;padding-bottom:10px;">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 class="text-center">Layanan</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Pembayaran</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">Tentang</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Ketentuan Layanan</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">Customer Service</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fa fa-phone"></i> (021) 2932 3456</a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3"> 
+                <h5 class="text-center" style="margin-top: 25px;">Social Media</h5>
+                <ul class="list-unstyled">
+                    <div class="social-media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <li>
+                        <a href="#">Download Aplikasi</a>
+                        <div class="app-store">
+                            <a href="#">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Download on Google Play">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center mb-0">&copy; 2022 Nama Toko. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+  
+  
+  
+  
+            <!-- Akhir Navbar -->
+
+            <!-- Import file JavaScript Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <!-- <script src="path/to/fontawesome/js/all.min.js"></script> -->
+
+        </script>
+    </body>
+</html>
