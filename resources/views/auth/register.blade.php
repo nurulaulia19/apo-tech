@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}"/>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .biru {
+        display: none;
+      }
+      .merah {
+        height: 100vh;
+        width: 100%;
+      }
+      @media only screen and (min-width: 913px) {
+        .biru {
+          display: flex;
+          width: 50%;
+          height: 100vh;
+        }
+        .merah {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex">
+      <div class="biru">
+        <div id="satu" style="width: 1500px" class="satu align-items-center d-flex">
+          <div style="position: absolute; top: 0; right: 0">
+            <img style="width: 200px; float: right" src="{{ asset('assets/assets-image/variasi.png') }}" alt="variasi" />
+          </div>
+          <div class="col d-flex flex-column align-items-center justify-content-center">
+            <img style="width: 500px" src= "{{ asset('assets/assets-image/regist.png') }}" alt="login" />
+            <p style="width: 450px; color: #ACA8A8; font-weight: 600; text-align: center;" class="fs-1 pt-4">
+                Let’s get started
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="merah">
+        <div class="d-flex flex-column" style="width: 100%; background-color: #91d8ea; height: 100vh; display: flex; justify-content: center; align-items: center">
+          <div class="pb-2">
+            <img style="width: 70px" src="{{ asset('assets/assets-image/icon.png') }}" alt="icon" />
+            <p class="pt-2" style="text-align: center; color: #ffff; font-weight: 700">Register</p>
+          </div>
+          <div style="width: 400px" class="bg-white p-4 rounded-4">
+            <form action="#">
+              <div class="">
+                <label style="color: #00b9d8; font-weight: 700" for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10 w-100"><input style="background-color: #f3f3f3" type="text" class="form-control" id="inputUsername" placeholder="Your username here" /></div>
+                <div class="">
+                  <label style="color: #00b9d8; font-weight: 700" for="inputEmail" class="col-sm-2 col-form-label">E-mail</label>
+                  <div class="col-sm-10 w-100">
+                    <input style="background-color: #f3f3f3" type="text" class="form-control" id="inputEmail" placeholder="your active e-mail here" />
+                  </div>
+                  
+                </div>
+                <div class="">
+                  <label style="color: #00b9d8; font-weight: 700" for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10 w-100">
+                    <input style="background-color: #f3f3f3" type="password" class="form-control" id="inputPassword" placeholder="password here" />
+                  </div>
+                  <span id="pwvalid" style="font-size: 12px; color: #565656; text-align: end; float: right; display: none;">Use 6 or more character</span>
+                </div>
+                
+                <div class="">
+                  <label style="color: #00b9d8; font-weight: 700" for="inputRetypePassword" class="col-sm-2 col-form-label w-100">Re-type Password</label>
+                  <div class="col-sm-10 w-100">
+                    <input style="background-color: #f3f3f3" type="password" class="form-control" id="inputRetypePassword" placeholder="retype password here" />
+                  </div>
+                  <p id="pwcinfimvalid" style="font-size: 12px; color: #565656; text-align: end; display: none;">Use the same password</p>
+                </div>
+                
+                <div style="display: flex;">
+                  <input type="checkbox" />
+                  <div><div style="padding-top: 12px;" ></div>
+                  <p style="color: #565656; font-size: 12px; padding-left: 10px;" >I agree to the <a href="#">Terms & Conditions & Privacy Policy</a></p>
+                </div>
+              </div>
+
+              <button style="background-color: #91d8ea; color: #ffff; font-weight: 700" class="btn w-100">Register</button>
+              <p style="color: #565656; font-size: 12px" class="text-center pt-2">Already have an account? <a href="login">Log In </a></p> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+    font-family: "Satoshi";
+} */
+
+/* .login {
+    height: 100vh;
+}
+
+.register {
+    height: 100vh;
+}
+
+.content h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45.9px;
+    line-height: 76px;
+    color: #ffffff;
+}
+
+.content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.2px;
+    line-height: 27px;
+
+    color: #ffffff;
+    margin-bottom: 20px;
+} */
+
+/* .header h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45.9px;
+    line-height: 76px;
+
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.login-right .input-form a {
+    margin: 20px 0;
+    display: block;
+    text-align: end;
+}
+
+.input-form .btn {
+    width: 100%;
+    height: 42px;
+    background: #4461f2;
+    box-shadow: 0px 11.8397px 20.7196px 3.94658px rgba(68, 97, 242, 0.15);
+    border-radius: 9.86646px;
+}
+
+.register-left .row .content {
+    background-image: url("assets/img/sadari.png");
+}
+
+.register .header h1 {
+    font-family: "Athiti";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.566px;
+    line-height: 47px;
+
+    color: #4461f2;
+    display: flex;
+    justify-content: center;
+}
+
+.register-right .input-form a {
+    margin: 20px 0;
+    display: block;
+    font-family: "Athiti";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8264px;
+    line-height: 19px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.register-right .row p {
+    font-family: "Athiti";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.7396px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    display: inline;
+    text-align: center;
+    margin-bottom: 5px;
+}
